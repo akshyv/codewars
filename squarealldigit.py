@@ -26,3 +26,12 @@ def square_digits(num):
 
 def square_digits(num):
     return int(''.join(str(int(d)**2) for d in str(num)))
+#%%
+# sol 3 (similar to my sol)
+
+def square_digits(num):
+    num = str(num)
+    ans = ''
+    for i in num:
+        ans += str(int(i)**2)
+    return int(ans)
